@@ -3,6 +3,13 @@
   <head>
     <script src="https://aframe.io/releases/1.4.1/aframe.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-particle-system-component@1.1.4/dist/aframe-particle-system-component.min.js"></script>
+
+    <a-asset-item id="aspen_6" src="assets/quaking_aspen_6.glb"></a-asset-item>
+    <a-asset-item id="aspen_5" src="assets/quaking_aspen_5.glb"></a-asset-item>
+    <a-asset-item id="aspen_4" src="assets/quaking_aspen_4.glb"></a-asset-item>
+    <a-asset-item id="aspen_3" src="assets/quaking_aspen_3.glb"></a-asset-item>
+    <a-asset-item id="aspen_2" src="assets/quaking_aspen_2.glb"></a-asset-item>
+    <a-asset-item id="aspen_1" src="assets/quaking_aspen_1.glb"></a-asset-item>
   </head>
   <body>
     <a-scene>
@@ -18,6 +25,21 @@
       color: #FFFFFF;
       size: .6;
     " position="0 5 0"></a-entity>
+
+      <a-entity gltf-model="#aspen_6"
+          position="5 -.5 5"
+          scale=".5 .5 .5"></a-entity>
+        <a-entity gltf-model="#aspen_5"
+        position="-6 -10 21"
+        scale="1 1 1"></a-entity>
+        <a-entity gltf-model="#aspen_4"
+        position="8 -4 -5"
+        scale="1 1 1"></a-entity>
+
+        <a-entity light="type: directional; color: #EEE; intensity: 3" position="1 1 0"></a-entity>
+        <a-entity light="type: ambient; color: white; intensity: 1.5"></a-entity>
+
+
       <a-sky src="assets/background.jpg"></a-sky>
     </a-scene>
   </body>
